@@ -14,6 +14,47 @@ html {
     margin-bottom: 60px;
 }
 
+.portfolio-grid{
+  display: grid;
+  gap: 20px;
+  margin-top: 50px;
+  grid-template-columns: 1fr 1fr
+}
+
+@media (max-width: 1160px) {
+  .portfolio-grid{
+    grid-template-columns: 1fr
+  }
+}
+
+.exp-indv-grid{
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 20% 3% 77%
+
+}
+
+
+
+.insidePort-grid{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  background: rgb(243,246,254);
+  border-radius: 17px;
+  padding: 22px;
+  border: 1px solid rgb(218 221 228);
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+}
+
+
+.grid-row-span-2{
+  grid-column: span 2;
+}
+
+
+
 @media (max-width: 1240px) {
     .statments, .answer {
         font-size: 19px;
@@ -116,12 +157,14 @@ html {
 
 
 
+
 }
 .expTitle{
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 30px;
-  margin: 0
+  margin: 0;
+  margin-top: -5px;
 }
 
 .expCompany{
@@ -131,11 +174,37 @@ html {
   margin: 0
 }
 
-.expDate{
+.exp-date-inner{
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 20px;
-  margin: 0
+  margin: 0;
+  display: none;
+  
+}
+
+.exp-date-outer{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin: 0;
+  display: block;
+  
+}
+
+@media (max-width: 1065px) {
+  .exp-date-inner{
+    display: inline;
+  }
+  .exp-date-outer{
+    display: none;
+  }
+  .exp-indv-grid{
+    grid-template-columns: 5% 95%
+  }
+  .line{
+    margin-left: 11.2px;
+  }
 }
 
 .expUL{
@@ -147,33 +216,22 @@ html {
 
 .circle{
   background: #FFFFFF;
-  border: 2px solid #D9D9D9;
-  width: 1.25rem;
-  height: 1.25rem;
+  /*border: 2px solid #D9D9D9;*/
+  border: 2px solid #25B2DA;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
+  margin-top: 3px;
 }
 
 .line {
-  border-left: 3px solid #D9D9D9;
+  /*border-left: 3px solid #D9D9D9;*/
+  border-left: 3px solid #25B2DA;
   height: 20px;
   position: absolute;
   z-index: -1;
-  margin-left: 8.1px
-}
-
-.linkedInLetters{
-  font-family: 'Poppins';
-  font-weight: 800;
-  color: #000000;
-  font-size: 80px;
-  margin: 0;
-  transition: color 0.4s ease;
-  text-decoration: none;
-}
-
-.linkedInLetters:hover {
-  color: #0072B1;
-  transition: color 0.4s ease;
+  margin-left: 228px;
+  margin-top: 3px;
 }
 
 .linkedInSquare{
@@ -251,7 +309,7 @@ html {
     display: flex;
     flex-direction: row;
     gap: 50px;
-    margin-bottom: 70px;
+    /*margin-bottom: 70px;*/
     position: sticky;
     top: 0;
     justify-content: space-evenly;
@@ -317,41 +375,42 @@ html {
 }
 
 .portName{
-    width: 87%;
-    font-weight: bold;
-    font-size: 22px;
+  font-weight: 400;
+  font-size: 2.1vw;
+  margin: 0;
 }
 
 .portDescription{
-    width: 87%;
+  width: 95%;
+  font-weight: 300;
+  font-size: .8vw;
+  margin: 0;
 }
 
-.referralRow{
-    display: flex;
-    flex-direction: row;
+.viewMore{
+  text-decoration: none;
+  color: #C3C3C3;
+  font-weight: 300;
+  font-size: .8vw;
 }
 
-@media (max-width: 962px) {
-    .referralRow {
-        flex-direction: column;
-    }
+@media (max-width: 1160px) {
+  .portName{
+    font-size: 3.4vw;
   }
+  .portDescription{
+    font-size: 1.3vw;
+  }
+  .viewMore{
+    font-size: 1.3vw;
+  }
+}
 
 .referralIMG{
-    width: 300px;
-    object-fit: cover;
-    margin-right: 44px;
-    border: 2px solid white;
+  width: 100%;
+  object-fit: cover;
+  border: 5px solid white;
 }
-
-@media (max-width: 962px) {
-    .referralIMG {
-        margin: auto;
-        width: 40vw;
-    }
-  }
-
-
 
 
 .rowPorts{
@@ -361,18 +420,15 @@ html {
     margin-top: 30px;
 }
 
-@media (max-width: 853px) {
-    .rowPorts {
-        flex-direction: column;
-    }
-  }
-
-.viewMore{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+.contact-grid{
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr
 }
 
+.imgContact{
+  height: 50px
+}
 
 .infoP, .contactRows{
     display: flex;
@@ -498,7 +554,8 @@ li:not(:last-child) {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
+    margin-top: 100px;
     font-family: 'Poppins', sans-serif;
   }
   .contactBox{

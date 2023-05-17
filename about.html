@@ -271,22 +271,15 @@
     <script>
 
         //Line height
-        window.addEventListener('load', function() {
-            var myDiv = document.getElementById("test2");
-            var height = myDiv.offsetHeight
-            var line = document.getElementById("line");
-            line.style.height = height + "px";
-        });
-
-
-        var myDiv = document.getElementById("test2");
         function updateDivHeight() {
+            var myDiv = document.getElementById("test2");
             var height = myDiv.offsetHeight
             var line = document.getElementById("line");
             line.style.height = height + "px";
         }
 
         window.addEventListener("resize", updateDivHeight);
+        window.addEventListener('load', updateDivHeight);
 
         //ARROWS//ARROWS//ARROWS//
         //PLANT WORKS
@@ -299,7 +292,8 @@
             DOWNarrowPW.style.display = "inline";
 
             PWbullets.style.display = "none";
-            
+
+            updateDivHeight();
         });
 
         DOWNarrowPW.addEventListener("click", function() {
@@ -307,6 +301,8 @@
             UParrowPW.style.display = "inline";
 
             PWbullets.style.display = "inline";
+
+            updateDivHeight();
         });
         //GIRLS ON THE RUN
         var UParrowGR = document.getElementById("gr-up-arrow");
@@ -314,12 +310,12 @@
         var GRbullets = document.getElementById("gr-bullets");
 
         UParrowGR.addEventListener("click", function() {
-            console.log("in1")
             UParrowGR.style.display = "none";
             DOWNarrowGR.style.display = "inline";
 
             GRbullets.style.display = "none";
-            
+
+            updateDivHeight();
         });
 
         DOWNarrowGR.addEventListener("click", function() {
@@ -328,6 +324,8 @@
             UParrowGR.style.display = "inline";
 
             GRbullets.style.display = "inline";
+
+            updateDivHeight();
         });
         //VITALITY BOWLS
         var UParrowVB = document.getElementById("vb-up-arrow");
@@ -340,6 +338,8 @@
             DOWNarrowVB.style.display = "inline";
 
             VBbullets.style.display = "none";
+
+            updateDivHeight();
             
         });
 
@@ -349,6 +349,8 @@
             UParrowVB.style.display = "inline";
 
             VBbullets.style.display = "inline";
+
+            updateDivHeight();
         });
         //MIRADOR
         var UParrowMR = document.getElementById("mr-up-arrow");
@@ -361,6 +363,8 @@
             DOWNarrowMR.style.display = "inline";
 
             MRbullets.style.display = "none";
+
+            updateDivHeight();
             
         });
 
@@ -370,6 +374,8 @@
             UParrowMR.style.display = "inline";
 
             MRbullets.style.display = "inline";
+
+            updateDivHeight();
         });
 
         

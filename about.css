@@ -167,6 +167,8 @@ li {
 
 
 
+
+
 }
 .expTitle{
   font-family: 'Poppins', sans-serif;
@@ -211,6 +213,8 @@ li {
   margin-top: 7px;
   margin-left: 18px;
 }
+
+
 
 @media (max-width: 1065px) {
   .exp-date-inner{
@@ -460,6 +464,7 @@ li {
   align-items: center;
 }
 
+
 .contact-left{
   font-family: 'Poppins';
   font-style: normal;
@@ -478,6 +483,29 @@ li {
   margin: 0;
   color: #25B2DA;
 }
+
+.icon-contact{
+  font-size: 47px;
+  color: #3D3E46;
+}
+
+
+@media (max-width: 1130px){
+
+  .contact-grid{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-me{
+    order: -1;
+  }
+
+  .icon-contact{
+    font-size: 40px;
+  }
+}
+
 
 .imgContact{
   height: 50px

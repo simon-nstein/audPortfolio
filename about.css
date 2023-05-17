@@ -63,26 +63,6 @@ li {
 }
 
 
-
-@media (max-width: 1240px) {
-    .statments, .answer {
-        font-size: 19px;
-    }
-  }
-
-  @media (max-width: 1130px) {
-    .statments, .answer {
-        font-size: 17px;
-    }
-  }
-
-@media (max-width: 640px) {
-    .statments {
-        max-width: none;
-        margin: 0 auto;
-    }
-  }
-
 .name{
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -109,23 +89,33 @@ li {
 }
 
 .textPassion{
-  display: flex;
-  flex-direction: column;
-  width: 85%
+  /*width: 85%;*/
+  /*background-color: red;*/
+  margin:0;
 }
 
 .imgPassion{
-  width: 95%;
-  height: 300px; 
+  width: 90%; 
   object-fit: cover;
-  /*margin-right: 70px;*/
+  object-position: top;
 }
+
+.img1{
+  height: 386px;
+  box-shadow: -20px 20px #25B2DA;
+}
+
+.img2{
+  height: 96%;
+  box-shadow: 20px 20px #25B2DA;
+}
+
 
 .headingPassion{
   font-family: 'Poppins';
   font-weight: 300;
-  /*font-size: 2.0vw;*/
-  font-size: 40px;
+  font-size: 3vw;
+  /*font-size: 40px;*/
   margin: 0;
   color: #3D3E46;
 }
@@ -137,10 +127,11 @@ li {
   font-size: 16px;
   margin: 0;
   color: #4B444B;
+  margin-bottom: 50px;
   
 }
 
-@media (min-width: 1175px)  {
+@media (min-width: 1285px)  {
   .passionsDiv {
     grid-template-columns: 50% 50%;
     grid-row-gap: 80px;
@@ -150,26 +141,29 @@ li {
   }
 }
 
-@media (max-width: 1175px) {
+@media (max-width: 1285px) {
 
   .headingPassion{
     font-size: 39px;
   }
   .bodyPassion{
     font-size: 17px;
+    margin-bottom: 0;
   }
   .textPassion{
     width: 100%;
-    margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
   }
   .imgPassion{
-    width: 100%;
+    width: 500px;
+    height: 433px;
+    justify-self: center;
+    margin-bottom: 30px;
   }
-  
   .img1{
-    margin-bottom: 70px;
+    /*margin-bottom: 70px;*/
+    
   }
-
 
 
 

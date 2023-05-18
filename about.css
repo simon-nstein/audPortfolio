@@ -43,8 +43,6 @@ li {
 
 }
 
-
-
 .insidePort-grid{
   display: grid;
   gap: 10px;
@@ -61,7 +59,6 @@ li {
 .grid-row-span-2{
   grid-column: span 2;
 }
-
 
 .name{
     margin: 0;
@@ -92,6 +89,8 @@ li {
   /*width: 85%;*/
   /*background-color: red;*/
   margin:0;
+  
+
 }
 
 .imgPassion{
@@ -103,11 +102,13 @@ li {
 .img1{
   height: 446px;
   box-shadow: -20px 20px #25B2DA;
+  animation: transitionLeft 0.7s ease-in-out forwards;
 }
 
 .img2{
   height: 96%;
   box-shadow: 20px 20px #25B2DA;
+  animation: transitionRight 0.7s ease-in-out forwards;
 }
 
 
@@ -165,10 +166,6 @@ li {
     
   }
 
-
-
-
-
 }
 .expTitle{
   font-family: 'Poppins', sans-serif;
@@ -213,8 +210,6 @@ li {
   margin-top: 7px;
   margin-left: 18px;
 }
-
-
 
 @media (max-width: 1065px) {
   .exp-date-inner{
@@ -267,77 +262,6 @@ li {
   z-index: -1;
   margin-left: 11px;
 }
-
-.linkedInSquare{
-  width: 17px;
-  height: 17px;
-  background: #0072B1;
-  margin-bottom: 32px;
-  margin-right: 30px;
-}
-
-.gmailLetters{
-  font-family: 'Poppins';
-  font-weight: 800;
-  color: #000000;
-  font-size: 80px;
-  margin: 0;
-  transition: color 0.4s ease;
-  text-decoration: none;
-}
-
-.gmailLetters:hover {
-  color: #BB001B;
-  transition: color 0.4s ease;
-}
-
-.gmailSquare{
-  width: 17px;
-  height: 17px;
-  background: #BB001B;
-  margin-bottom: 32px;
-  margin-right: 30px;
-}
-
-.IGLetters{
-  font-family: 'Poppins';
-  font-weight: 800;
-  color: #000000;
-  font-size: 80px;
-  margin: 0;
-  transition: color 0.4s ease;
-  text-decoration: none;
-}
-
-.IGLetters:hover {
-  color: #C13584;
-  transition: color 0.4s ease;
-}
-
-.IGSquare{
-  width: 17px;
-  height: 17px;
-  background: #C13584;
-  margin-bottom: 32px;
-}
-
-
-.picture{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 22px;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
-    
-    position: absolute;
-    right: 0;
-}
-
-@media (max-width: 1040px) {
-    .picture {
-        display: none;
-    }
-  }
 
 #nav{
     display: flex;
@@ -397,17 +321,6 @@ li {
     margin-bottom: 40px;
 }
 
-.portfolioIndividualDivs{
-    display: flex;
-    flex-direction: column;
-    background: rgb(243,246,254);
-    border-radius: 17px;
-    padding: 22px;
-    border: 1px solid rgb(218 221 228);
-    font-family: 'Poppins', sans-serif;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
-}
-
 .portName{
   font-weight: 400;
   font-size: 2.1vw;
@@ -447,14 +360,6 @@ li {
   height: 100%;
   object-fit: cover;
   border: 5px solid white;
-}
-
-
-.rowPorts{
-    display: flex;
-    flex-direction: row;
-    gap: 38px;
-    margin-top: 30px;
 }
 
 .contact-grid{
@@ -505,116 +410,6 @@ li {
     font-size: 40px;
   }
 }
-
-
-.imgContact{
-  height: 50px
-}
-
-.infoP, .contactRows{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.linkedinGithub{
-    color: rgb(52,120,177);
-    font-size: 40px;
-    margin-top: -7px;
-}
-
-.contactRows{
-    display: flex;
-    flex-direction: row;
-    margin-right: 2%;
-    margin-top: 2%;
-    gap: 1em;
-}
-
-.inivid{
-    background: rgb(244 246 254);
-    height: 453px;
-    display: inline-block;
-    border-style: solid;
-    color: black;
-    text-align: center;
-    padding: 14px;
-    min-width: 500px;
-    border-radius: 15px;
-    font-family: 'Poppins', sans-serif;
-    text-align: left;
-    border: 1px solid rgb(218 221 228);
-    background-image: linear-gradient(to bottom, #dbdde4 20%, #f4f6fe 20%);
-}
-
-li:not(:last-child) { 
-    margin-bottom: 15px;  
- }
-
-.logo{
-    width: 200px;
-    object-fit: scale-down;
-    margin-right: 40px;
-    margin-top: 10px;
-    object-position: top;
-    
-}
-  
-  a {
-    display: inline-block;
-    border-radius: 50%;
-  }
-
-  .connect_button {
-    text-decoration: none;
-    background-color: #436f9e;
-    border-radius: 5px;
-    color: #ffffff;
-    line-height: 16px;
-    position: relative;
-    width: 50%;
-    margin: auto;
-    margin-bottom: 15px;
-  }
-
-  .connect_button:hover {
-    background-color: #4d7eb3;
-  }
-
-  #email {
-    background-color: #c24b3a
-  }
-
-  #email:hover {
-    background-color: #d0523e;
-    cursor: pointer;
-  }
-
-  .connect_button i {
-    font-size: 1.5em;
-    line-height: 1.8em;
-    width: 50px;
-    position: absolute;
-    left: 0;
-  }
-
-  @media (max-width: 800px) {
-    .connect_button {
-        width: 90%;
-    }
-  }
-
-  .circlePhoto {
-    animation: MoveUpDown 2.8s linear infinite;
-    width: 120px;
-    height: 120px;
-    border-radius: 100px;
-    overflow: hidden;
-    border: 6px solid #FFFFFF;
-    margin: auto;
-    margin-top: -33px;
-  }
-  
   @keyframes MoveUpDown {
     0%, 100% {
       transform: translateY(0);
@@ -632,146 +427,12 @@ li:not(:last-child) {
     margin-top: 70px;
     font-family: 'Poppins', sans-serif;
   }
-  .contactBox{
-    display: flex;
-    flex-direction: column;
-    width: 630px;
-    margin: auto;
-    font-weight: bold;
-    background: rgb(244 246 254);
-    border-radius: 10px;
-    border: 1px solid rgb(218 221 228);
-  }
-
-  @media (max-width: 800px) {
-    .contactBox {
-        width: 80vw;
-    }
-  }
-
-  .contactName{
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 0;
-    margin-top: 12px;
-  }
 
   .headerSmallRight{
     text-align: center;
     margin-bottom: 0px;
     margin-top: 0;
   }
-
-
-  /* Slider Styling */
-*{
-  box-sizing: border-box;
-}
-
-.carouselSect{
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.swiper{
-  width: 76vw;
-}
-
-.card{
-  position: relative;
-  background: #fff;
-  border-radius: 20px;
-  height: 400px;
-  margin: 20px 0;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.card::before{
-  content: "";
-  position: absolute;
-  height: 40%;
-  width: 100%;
-  background: white;
-  border-radius: 20px 20px 0 0;
-}
-
-.card .card-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  position: relative;
-  z-index: 100;
-  background: rgb(243,246,254);
-  border: 1px solid rgb(218 221 228);
-  font-family: 'Poppins', sans-serif;
-  border-radius: 10px;
-}
-
-.card .button{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-.swiper-pagination{
-  position: absolute;
-  top: 450px;
-}
-
-.swiper-pagination-bullet{
-  height: 7px;
-  width: 26px;
-  border-radius: 25px;
-  background: white;
-}
-
-.swiper-button-next, .swiper-button-prev{
-  opacity: 0.7;
-  color: white;
-  transition: all 0.3s ease;
-}
-.swiper-button-next:hover, .swiper-button-prev:hover{
-  opacity: 1;
-  color: white;
-}
-
-.skillsBox{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /*flex-flow: wrap;*/
-    font-family: 'Poppins', sans-serif;
-    gap: 60px;
-}
-
-@media (max-width: 900px) {
-    .skillsBox {
-        flex-flow: wrap;
-        gap: 13px;
-    }
-  }
-
-.skills{
-    text-align: center;
-    color: rgb(102,102,102);
-}
-
-.skillName{
-    font-weight: bold;
-    font-size: 20px;
-    color: #416c9b;
-}
-
-.skillsHeader{
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
 
 .sectionName{
     font-size: 60px;
@@ -790,12 +451,37 @@ li:not(:last-child) {
     transition: color 0.5s;
   }
 
+
 .hidden{
   opacity: 0;
   filter: blur(5px);
   transform: translateX(0);
   transition: all 1s;
 }
+
+@keyframes transitionLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes transitionRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+
 
 .show{
   opacity: 1;

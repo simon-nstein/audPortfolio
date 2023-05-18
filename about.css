@@ -14,7 +14,7 @@ li {
 .statments{
   font-family: 'Poppins', sans-serif;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 300;
     /*max-width: 90%;*/
     word-wrap: break-word;
     flex-wrap: wrap;

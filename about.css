@@ -156,7 +156,9 @@ li {
     /*margin-bottom: 15px;*/
   }
   .imgPassion{
-    width: 500px;
+    /*width: 500px;*/
+    /*CHANGED*/
+    width: 75%;
     height: 433px;
     justify-self: center;
     margin-bottom: 30px;
@@ -348,10 +350,10 @@ li {
     font-size: 3.4vw;
   }
   .portDescription{
-    font-size: 1.3vw;
+    font-size: 1.8vw;
   }
   .viewMore{
-    font-size: 1.3vw;
+    font-size: 1.8vw;
   }
 }
 
@@ -501,4 +503,10 @@ li {
 }
 .portfolioIndividualDivs:nth-child(3){
   transition-delay: 400ms;
+}
+
+.section-div{
+  margin-left: 12%;
+  margin-right: 12%;
+  scroll-behavior: smooth;
 }

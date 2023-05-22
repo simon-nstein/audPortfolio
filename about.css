@@ -168,6 +168,24 @@ li {
     
   }
 
+@media (max-width: 680px) {
+  .imgPassion{
+    height: 334px;
+  }
+}
+
+@media (max-width: 515px) {
+  .imgPassion{
+    height: 268px;
+  }
+}
+
+@media (max-width: 383px) {
+  .imgPassion{
+    height: 208px;
+  }
+}
+
 }
 .expTitle{
   font-family: 'Poppins', sans-serif;

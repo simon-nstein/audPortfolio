@@ -476,6 +476,29 @@ li {
   #nav{
     display: none;
   }
+  .name{
+    font-size: 27px;
+  }
+
+  .statments{
+    font-size: 15px;
+  }
+
+  .expTitle{
+    font-size: 21px;
+  }
+
+  .expCompany{
+    font-size: 21px;
+  }
+
+  .exp-date-inner{
+    font-size: 17px;
+  }
+
+  .expUL{
+    font-size: 14px;
+  }
 
 }
 

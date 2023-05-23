@@ -11,6 +11,10 @@ li {
   color: #4B444B;
 }
 
+.intro{
+  margin-top: 50px
+}
+
 .statments{
   font-family: 'Poppins', sans-serif;
     font-size: 21px;
@@ -482,6 +486,7 @@ li {
 
   .statments{
     font-size: 15px;
+    margin-bottom: 25px;
   }
 
   .expTitle{
@@ -498,6 +503,14 @@ li {
 
   .expUL{
     font-size: 14px;
+  }
+
+  .intro{
+    margin-top: 25px;
+  }
+
+  .headingPassion{
+    font-size: 34px;
   }
 
 }

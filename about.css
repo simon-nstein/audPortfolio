@@ -355,7 +355,7 @@ li {
 .portDescription{
   width: 95%;
   font-weight: 300;
-  font-size: .8vw;
+  font-size: .9vw;
   margin: 0;
   color: #4B444B;
 }
@@ -364,7 +364,7 @@ li {
   text-decoration: none;
   color: #C3C3C3;
   font-weight: 300;
-  font-size: .8vw;
+  font-size: .9vw;
 }
 
 @media (max-width: 1160px) {
